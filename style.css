@@ -71,3 +71,29 @@ body {
     font-weight: 700;
     opacity: 0.7;
 }
+
+.reveal {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.reveal input {
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.reveal button {
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.bet--actualWinner {
+    font-weight: 800;
+    border: 2px solid black;
+}

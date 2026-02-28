@@ -1,6 +1,6 @@
 <!-- index.html -->
 <!doctype html>
-<html lang="en">
+<html lang="sv">
 
 <head>
     <meta charset="UTF-8" />
@@ -11,11 +11,30 @@
 
 <body>
     <main class="wrap">
-        <h1>Lillebror kommer om..</h1>
+        <h1 id="title">Lillebror kommer om..</h1>
         <div id="countdown" class="countdown">Loading…</div>
         <p id="subtitle" class="subtitle"></p>
 
-        <h2>Family Bets</h2>
+        <h2 id="betListTitle">Om han kommer nu vinner...</h2>
+        <ul id="betsList" class="bets"></ul>
+
+        <div class="reveal">
+            <input id="passInput" type="password" placeholder="Passphrase…" />
+            <button id="revealBtn">Stop & Reveal</button>
+            <div id="revealMsg" class="subtitle"></div>
+        </div>
+
+        <p id="frozenLine" class="subtitle"></p>
+        <p id="winnerLine" class="subtitle"></p>
+
+        <div id="stoppedPanel" hidden>
+            <label>
+                Stopped time:
+                <input id="stoppedTimeInput" type="datetime-local" />
+            </label>
+            <button id="applyStoppedTimeBtn">Apply</button>
+        </div>
+
         <ul id="betsList" class="bets"></ul>
     </main>
 
