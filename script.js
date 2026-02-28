@@ -192,6 +192,7 @@ if (applyStoppedTimeBtnEl) {
 function render() {
   const now = new Date();
   const effectiveTime = frozenBirthTime ?? now;
+  let winner = "";
 
   if (!hasRevealed) {
     frozenLineEl.textContent = "";
@@ -208,7 +209,10 @@ function render() {
     const li = document.createElement("li");
     li.classList.add("bet");
 
-    if (bet.isWinner) li.classList.add("bet--winner");
+    if (bet.isWinner) {
+      li.classList.add("bet--winner");
+      winner = bet.name;
+    }
     if (bet.isExpired) li.classList.add("bet--expired");
 
     // OPTIONAL: if frozen, add minutes difference under each bet for extra satisfaction
@@ -233,19 +237,9 @@ function render() {
     titleEl.textContent = "🎉Lillebror är här!🎉";
     countdownEl.textContent = `⏱️ ${frozenBirthTime.toLocaleString("sv-SE")}`;
     subtitleEl.textContent = "";
-    betListTitleEl.textContent = "🏆 Vinnaren är...";
+    betListTitleEl.textContent = `🏆 Vinnaren är ${winner}! 🏆`;
     return; // stop here in frozen mode
   }
-
-
-
-  // const totalSeconds = Math.floor(diffMs / 1000);
-  // const days = Math.floor(totalSeconds / (3600 * 24));
-  // const hours = Math.floor((totalSeconds % (3600 * 24)) / 3600);
-  // const minutes = Math.floor((totalSeconds % 3600) / 60);
-  // const seconds = totalSeconds % 60;
-
-  //countdownEl.textContent = `${days}d ${pad(hours)}h ${pad(minutes)}m ${pad(seconds)}s`;
 
   const isOverdue = diffMs < 0;
   const absSeconds = Math.floor(Math.abs(diffMs) / 1000);
