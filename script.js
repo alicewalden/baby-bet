@@ -40,6 +40,9 @@ const bets = [
   { name: "Louie", time: "2026-03-28T16:33:00" },
   { name: "Liv", time: "2026-03-26T01:52:00" },
   { name: "Ulric", time: "2026-03-30T07:35:00" },
+  { name: "Christine", time: "2026-04-03T09:45:00" },
+  { name: "Owe", time: "2026-03-27T23:00:00" },
+  { name: "Anita", time: "2026-03-29T15:30:00" },
 ];
 
 const betsParsed = bets
