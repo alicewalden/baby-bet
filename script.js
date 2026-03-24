@@ -34,7 +34,7 @@ const bets = [
   { name: "Alice", time: "2026-03-28T04:11:00" },
   { name: "Junior", time: "2026-03-26T12:12:00" },
   { name: "Ylva", time: "2026-04-04T01:01:00" },
-  { name: "Adam", time: "2026-04-04T12:34:00" },
+  { name: "Adam", time: "2026-04-07T12:34:00" },
   { name: "Colin", time: "2026-03-27T19:13:00" },
   { name: "David", time: "2026-03-25T12:14:00" },
   { name: "Louie", time: "2026-03-28T16:33:00" },
