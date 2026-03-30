@@ -1,9 +1,9 @@
 // script.js
 const PASSPHRASE = "Välkommen Viggo!";
 
-let frozenBirthTime = null; // Date when revealed
+let frozenBirthTime = new Date("2026-03-30T18:12:00");; // Date when revealed
 let intervalId = null;
-let hasRevealed = false;
+let hasRevealed = true;
 
 // Set your sister's due date here (local time).
 const DUE_DATE = new Date("2026-03-29T00:00:00");
