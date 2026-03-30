@@ -1,7 +1,7 @@
 // script.js
 const PASSPHRASE = "Välkommen Viggo!";
 
-let frozenBirthTime = new Date("2026-03-30T18:12:00");; // Date when revealed
+let frozenBirthTime = new Date("2026-03-30T18:12:00"); // Date when revealed
 let intervalId = null;
 let hasRevealed = true;
 
